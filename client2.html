@@ -24,7 +24,6 @@
             var socket=io();
 
             socket.on('name', function(a){
-                document.getElementById("change").innerHTML=a[1]+"<br>";
                 document.getElementById("table").innerHTML="<tr><th>Company</th><th>Status</th></tr>";
 
                 for(var i=0;i<a.length;i++){
