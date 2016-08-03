@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Push notification server</title>
+        <style type="text/css">
+            table{
+                border-collapse: collapse;
+                border: 2px black solid;
+            }
+            td{
+                border: 1px black solid;
+                padding: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p id="change">Text goes here</p>
+        <table id="table"></table>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+
+        <script type="text/javascript">
+            var socket=io();
+
+            socket.on('name', function(a){
+                document.getElementById("change").innerHTML=a[1]+"<br>";
+                document.getElementById("table").innerHTML="<tr><th>Company</th><th>Status</th></tr>";
+
+                for(var i=0;i<a.length;i++){
+                    document.getElementById("table").innerHTML+="<tr><td>"+a[i][0]+"</td><td>"+a[i][1]+"</td></tr>";                    
+                }
+            });
+        </script>
+    </body>
+</html>
