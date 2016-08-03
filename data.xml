@@ -1,0 +1,31 @@
+<Data>
+	<Revision>2</Revision>
+	
+	<Company>
+		<Name> sell </Name>
+		<Status> sell </Status>
+	</Company>
+
+
+	<Company>
+		<Name> Kharap </Name>
+		<Status> Sell </Status>
+	</Company>
+
+	<Company>
+		<Name> Valo </Name>
+		<Status> Do Nothing </Status>
+	</Company>
+
+	<Company>
+		<Name> Sum </Name>
+		<Status> Sell </Status>
+	</Company>
+
+	<Company>
+		<Name> Supersum </Name>
+		<Status> Sell </Status>
+	</Company>	
+	
+	
+</Data>
